@@ -1,0 +1,105 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
+body {
+}
+
+#container {
+    width: 100%;
+    margin: auto;
+}
+
+#stageGame {
+    width: 960px;
+    height: 550px;
+    margin: auto;
+    background-image: url(../image/bac-01.png);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+#player {
+    width: 80px;
+    height: 170px;
+    background-image: url(../image/player-02.png);
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 20px;
+    right: 45%;
+}
+
+#monster {
+    width: 350px;
+    height: 220px;
+    background-image: url(https://raw.githubusercontent.com/ofirm109/gamefortest1/master/image/monster-03.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 20px;
+    right: 32%;
+}
+
+#stopGame {
+    width: 55px;
+    height: 50px;
+    background-image: url(../image/stop-04.png);
+    background-size: 200%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+    #stopGame:hover {
+        background-size: 200%;
+        background-position-x: 55px;
+    }
+
+#timer {
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    top: 4px;
+    right: 20px;
+    color: white;
+    font-size: 15pt;
+}
+
+#playWindow {
+    background-image: url(../image/bac-01.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+    #playWindow p {
+        font-family: 'Heebo', sans-serif;
+        color: white;
+        font-size: 30pt;
+        position: absolute;
+        top: 30%;
+        right: 19%;
+        font-weight: bold;
+        text-align: center;
+    }
+
+#Bubble {
+    font-family: 'Heebo', sans-serif;
+    color: black;
+    font-size: 1.1em;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 200px;
+    position: absolute;
+    bottom: 70px;
+    right: 200px;
+}
+
+    #Bubble:after {
+        content: '';
+        border: 22px solid transparent;
+        border-right-color: white;
+        border-left: 0;
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        margin-top: -20px;
+    }
